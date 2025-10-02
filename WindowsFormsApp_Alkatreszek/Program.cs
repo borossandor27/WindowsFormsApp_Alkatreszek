@@ -26,7 +26,7 @@ namespace WindowsFormsApp_Alkatreszek
                 Console.WriteLine("Adatbázis nem létezik, inicializálás...");
                 dbManager.InitializeDatabase();
             }
-
+            dbManager.insertKategoria("teszt");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FormMain());
